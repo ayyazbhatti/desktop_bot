@@ -12,6 +12,7 @@ Simple web panel to open positions on **MetaTrader 5**: **Rust** backend, **Reac
 
 ## Operations & production
 
+- **[docs/SETUP-COMPLETE.md](docs/SETUP-COMPLETE.md)** — **full checklist**: main panel + building/installing the remote desktop agent `.exe` on other laptops.
 - **[docs/RUNBOOK.md](docs/RUNBOOK.md)** — environment variables (operator login, Vite, `AGENT_ADMIN_KEY`, pairing), TLS + nginx, secrets, and `backend/data/` backups.
 
 ## Requirements
