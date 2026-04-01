@@ -1,0 +1,19 @@
+MT5 Remote Agent — quick start
+
+Why a folder? The program needs: the .exe, library bundle (_internal), MT5 bridge scripts (python_bridge),
+and bundled Python (runtime). That is normal for PyInstaller. You can still install once using Inno Setup
+(build_installer.ps1) to get a single Setup.exe that installs everything under Program Files.
+
+1) If needed, edit config.json next to MT5RemoteAgent.exe:
+   - accounts: full paths to each MetaTrader terminal64.exe on this PC
+   - api_base is filled in the pairing window on first run if you use the GUI
+
+2) First time — register this PC:
+   Double-click MT5RemoteAgent.exe. A pairing window opens: paste the code from the panel and click
+   Register. (PAIR_FIRST_RUN.bat is optional. Advanced: set PAIRING_CODE in cmd, or MT5_AGENT_NO_GUI=1 to
+   disable the window and use the console only.)
+
+3) After pairing, keep the small status window open or run the exe again — it will connect using saved
+   device_id and token in config.json.
+
+Keep this entire folder together when copying manually (_internal, python_bridge, runtime, config.json).
